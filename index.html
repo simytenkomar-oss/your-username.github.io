@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="спорт, події, турніри, матчі, платформа">
+    <meta name="description" content="Практична робота №12 — Інтернет-платформа для спортивних подій">
+    <meta name="author" content="Малюк Владислав">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportArena — Практична робота №12</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+    <header>
+        <h1>SportArena — Платформа спортивних подій</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#" title="Головна">&#127968;</a></li>
+            
+            <li class="has-dropdown">
+                <a href="#">Новини &#9662;</a>
+                <ul class="dropdown">
+                    <li><a href="#">Футбол</a></li>
+                    <li><a href="#">Баскетбол</a></li>
+                    <li><a href="#">Теніс</a></li>
+                </ul>
+            </li>
+
+            <li class="has-dropdown">
+                <a href="#">Блог &#9662;</a>
+                <ul class="dropdown">
+                    <li><a href="#">Статті</a></li>
+                    <li><a href="#">Інтерв'ю</a></li>
+                    <li><a href="#">Аналітика</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <aside>
+            <h2>Про платформу</h2>
+            <h5>Наш символ / фото:</h5>
+            <img src="profile-photo.jpg" alt="Моє фото" class="content-img">
+            <p>Оперативне анонсування спортивних подій, трансляцій та результатів матчів у реальному часі.</p>
+            
+            <h3>Категорії</h3>
+            <p>Обирайте улюблені види спорту та слідкуйте за турнірною таблицею.</p>
+            <div class="fakeimg">Футбол</div><br>
+            <div class="fakeimg">Баскетбол</div><br>
+            <div class="fakeimg">Бокс</div>
+        </aside>
+        
+        <main>
+            <h2>ЦЕНТРАЛЬНИЙ МАТЧ ТУРУ</h2>
+            <h5>Опис, <time datetime="2026-11-12">Nov 12, 2026</time></h5>
+           
+            <img src="match-photo.jpg" alt="Фото з матчу" class="content-img">
+            <p>Звіт про найочікуванішу подію тижня у світі українського спорту. Запекра боротьба на кожному метрі поля тримала вболівальників у напрузі до останньої хвилини.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>МІЖНАРОДНИЙ ТУРНІР</h2>
+            <h5>Опис, <time datetime="2026-11-10">Nov 10, 2026</time></h5>
+            
+            <img src="tournament-photo.jpg" alt="Фото турніру" class="content-img">
+            <p>Огляд виступів національних збірних на міжнародній арені. Аналіз ключових моментів та коментарі тренерів після завершення зустрічей.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </main>
+    </div>
+
+    <footer>
+        <h2>Footer</h2>
+        <hr style="height: 0.06rem; background-color: darkseagreen; border-width: 0px;">
+        <p>&copy; 2026 Малюк Владислав | КН-24, СТФК НУХТ | <time>12-11-2026</time></p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.menu');
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
